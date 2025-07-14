@@ -1,0 +1,37 @@
+header h1 {
+    width: 100%;
+    text-transform: uppercase;
+    border-top:1px solid #333;
+    font-size: 5rem;
+}
+
+header img#pfp {
+    width: 75px;
+    height:75px;
+}
+
+header span {
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+
+header span#topic {
+    font-weight: bold;
+    color:#666;
+}
+
+#container {
+    width: 75vw;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 50px;
+    background-color: white;
+}
+
+
+
+footer p {
+    font-style: italic;
+}
+
+

@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url(./assets/font/Merriweather-Regular.ttf), format("ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url(./assets/font/Merriweather-Italic.ttf), format("ttf");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url(./assets/font/Merriweather-Bold.ttf), format("ttf");
+    font-style: bold;
+    font-weight: bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+	width: 100%;
+	height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background: url(./assets/greyfloral.png);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+h1, h2 {
+    font-family: Merriweather, 'Times New Roman', Times, serif;
+}
+
+
+h2 {
+    font-style: italic;
+    border-bottom: 1px dotted #ccc;
+}
+    
+h3 {
+    text-transform: uppercase;
+}
+
+main {
+    margin: 15px 0;
+    min-height: 75vh;
+
+}
+
+section {
+    margin: 25px 0;
+    line-height: 1.75;
+}
+
+ol, ul {
+    margin-left: 50px;
+}
+
+footer {
+    border-top:1px solid #333;
+    padding:10px;
+    text-align: center;
+}
+
+code {
+    background-color: #333;
+    color:whitesmoke;
+    padding:3px;
+    white-space: pre;
+}
+
+pre {
+    background: #333;
+    display: block;
+    white-space: pre-line;
+    overflow: scroll;
+    max-height: 600px;
+}
