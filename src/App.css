@@ -46,8 +46,8 @@ header nav {
         padding:1rem;
         &:hover {
             color: #000;
-            background-color:#fff;
-            outline:1px dotted #ccc;
+            background-color:transparent;
+            outline:1px solid #ccc;
         }
 
     }

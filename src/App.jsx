@@ -1,5 +1,6 @@
 import pfpImg from "./assets/pfp.jpg"
 import './App.css'
+import ProjectsContainer from "./pages/ProjectsContainer"
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
 						</div>
 						<nav>
 							<a href="#">Home</a>
-							<a href="#">Projects</a>
+							<a href="#projects">Projects</a>
 							<a href="#">Contact</a>
 						</nav>
 				</header>
@@ -28,10 +29,7 @@ function App() {
 						<p>Enjoy your stay!</p>
 					</section>
 
-					<section>
-						<h2>Under Construction</h2>
-						<p>Check back again soon!</p>
-					</section>
+					<ProjectsContainer />
 
 
 							
