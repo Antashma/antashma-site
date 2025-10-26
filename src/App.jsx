@@ -1,45 +1,30 @@
-import pfpImg from "./assets/pfp.jpg"
-import './App.css'
+import Header from "./components/Header";
+import IconNav from "./IconNav";
 import ProjectsContainer from "./pages/ProjectsContainer"
+// import LeetcodeContainer from "./pages/LeetcodeContaintainer"
+
+import './App.css'
+import About from "./pages/About";
+
 
 function App() {
 
 	return (
-		<div id="container">
-			<div id="container--content">
-				<header>
-						<div>
-							<img src={pfpImg} width="75" height="75" />
-							<span>antashma.dev</span>
-						</div>
-						<nav>
-							<a href="#">Home</a>
-							<a href="#projects">Projects</a>
-							<a href="#">Contact</a>
-						</nav>
-				</header>
+		<div id="app">
+			<Header />
+			<IconNav />
+			<main>
+				<About />
+				{/* <ProjectsContainer /> */}
+				{/* <LeetcodeContainer /> */}
+			</main>
 
-				<main>
-					<h1>Welcome</h1>
-					<section>
-						<h2>Hello!</h2>
-						<p>Hi, I'm Samantha—welcome to my little corner of the web!</p>
-						<p>Here, you'll find a collection of projects, big and small, born from a love of tinkering with my favorite languages—especially JavaScript. Whether it's a quirky side experiment or a full-fledged app, there's always something brewing.</p>
-						<p>See something that sparks your interest? I'd love to hear your thoughts—or even collaborate! Feel free to reach out via the contact page.</p>
-						<p>Enjoy your stay!</p>
-					</section>
-
-					<ProjectsContainer />
-
-
-							
-				</main>
-
-				<footer>
-						<p><a href="https://github.com/Antashma">@antashma</a></p>
-				</footer>
-			</div>
+			<footer>
+				<p>Created with ❤️ & ☕ by <a href="https://github.com/Antashma" title="Github link">@antashma</a></p>
+				<p>Heart emoticon icons created by <a href="https://www.flaticon.com/packs/heart-emoticons" title="heart emoticon icons">Smashicons - Flaticon</a></p>
+			</footer>
 		</div>
+
 	)
 }
 
