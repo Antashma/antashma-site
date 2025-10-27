@@ -29,7 +29,7 @@ export default function Icon({ windowId, iconText }) {
         <div 
             id={`${windowId}-icon`} 
             className="desktop-icon--container"
-            onDoubleClick={() => openWindow(windowId)}
+            onClick={() => openWindow(windowId)}
             onMouseOver={() => setIsHovering(true)}
             onMouseOut={() => setIsHovering(false)}
             >
