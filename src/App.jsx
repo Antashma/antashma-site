@@ -19,11 +19,6 @@ function App() {
 				<ProjectsContainer />
 				<Contact />
 			</main>
-
-			<footer>
-				<p>Created with ❤️ & ☕ by <a href="https://github.com/Antashma" title="Github link">@antashma</a></p>
-				<p>Heart emoticon icons created by <a href="https://www.flaticon.com/packs/heart-emoticons" title="heart emoticon icons">Smashicons - Flaticon</a></p>
-			</footer>
 		</div>
 
 	)

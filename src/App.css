@@ -16,8 +16,6 @@ h3 {
 main {
     margin: 0 auto;
     width: 800px;
-    min-height: 75vh;
-
 }
 
 ol,
@@ -51,9 +49,7 @@ header {
         justify-content: right;
         gap: 1.5rem;
         padding-block: 0.5rem;
-        padding-right: 1.5rem;
-
-        
+        padding-right: 1.5rem;      
     }
 }
 
@@ -152,12 +148,17 @@ header {
             border: 1px solid #ccc;
         }
 
-        p {
+        .profile-text {
             background-color: #ccc;
             padding: 10px;
-            display: flex;
             justify-content: center;
             align-items: center;
+            .credits {
+                border-top: 1px solid #666;
+                margin-top: 10px;
+                padding-top: 10px;
+                font-style: italic;
+            }
         }
     }
 }
@@ -193,33 +194,16 @@ header {
     }
 }
 
-footer {
-    background-color: #ccc;
-    padding: 10px;
-    text-align: center;
 
-    p {
-        font-style: italic;
+@media only screen and (max-width: 600px) {
+    header {
+         display: none;
     }
-}
-
-#leetcode--container {
-    display: flex;
-    flex-wrap: wrap;
-
-    h2 {
+    .profile-img {
+        display: none;
+    }
+    main {
         width: 100%;
+        min-width: 600px;
     }
-
-    img {
-        width: 50%;
-    }
-}
-
-.lc-subtitle {
-    font-style: italic;
-}
-
-.lc--text-content {
-    width: 50%;
 }
