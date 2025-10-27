@@ -1,10 +1,11 @@
 import Header from "./components/Header";
 import IconNav from "./IconNav";
 import ProjectsContainer from "./pages/ProjectsContainer"
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 // import LeetcodeContainer from "./pages/LeetcodeContaintainer"
 
 import './App.css'
-import About from "./pages/About";
 
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
 			<IconNav />
 			<main>
 				<About />
-				{/* <ProjectsContainer /> */}
-				{/* <LeetcodeContainer /> */}
+				<ProjectsContainer />
+				<Contact />
 			</main>
 
 			<footer>

@@ -19,9 +19,31 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'DM Mono';
+    src: url(./assets/font/DMMono-Regular.ttf), format("ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    src: url(./assets/font/DMMono-Italic.ttf), format("ttf");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'DM Mono';
+    src: url(./assets/font/DMMono-Medium.ttf), format("ttf");
+    font-style: bold;
+    font-weight: 500;
+}
+
 :root {
     --merryFont: Merriweather, 'Times New Roman', Times, serif;
-    --plainFont: Arial, Helvetica, sans-serif;
+    --monoFont: "DM Mono", monospace;
+    --plainFont: 'Courier New', Courier, monospace;
 }
 
 * {
@@ -35,13 +57,10 @@ html {
 }
 
 body {
-    font-family: var(--plainFont);
+    font-family: var(--monoFont);
     font-size: 1.6rem;
     background: url(./assets/greyfloral.png) fixed;
 }
 
-#root {
-    height: 100dvh;
-}
 
 

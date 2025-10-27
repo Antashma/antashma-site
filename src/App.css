@@ -4,6 +4,11 @@ h1 {
     font-size: 5rem;
 }
 
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 h3 {
     text-transform: uppercase;
 }
@@ -15,14 +20,13 @@ main {
 
 }
 
-section {
-    margin: 25px 0;
-    line-height: 1.75;
-}
-
 ol,
 ul {
     margin-left: 50px;
+}
+
+a {
+    color: rgb(251, 46, 149);
 }
 
 header {
@@ -42,44 +46,27 @@ header {
         }
     }
 
-    nav {
+    .time-date--container {
         display: flex;
         justify-content: right;
         gap: 1.5rem;
         padding-block: 0.5rem;
         padding-right: 1.5rem;
 
-        a {
-            text-decoration: none;
-            text-transform: lowercase;
-            color: #000;
-            text-align: center;
-
-            &:hover {
-                border-radius: 5px;
-                color: #000;
-                background-color: #999;
-                padding: 0 1rem;
-                outline: 1px solid #ccc;
-            }
-        }
+        
     }
-}
-
-#app {
-    /* height: 100%; */
 }
 
 #icons {
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .desktop-icon--container {
     width: 80px;
     height: 80px;
     margin: 10px;
-    /* border: 1px solid lightcoral; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,6 +87,7 @@ header {
     border-radius: 5px;
     width: 100%;
     text-align: center;
+    user-select: none;
 
     &.hover-bg {
         background-color: hotpink;
@@ -107,7 +95,7 @@ header {
 }
 
 .window {
-    width: 80vw;
+    width: 100%;
     height: auto;
     margin: 10px;
     border: 1px solid #000;
@@ -118,6 +106,11 @@ header {
     .content {
         display: flex;
         padding: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(5px);
+        line-height: 1.75;
     }
 }
 
@@ -132,7 +125,7 @@ header {
     background-color: #000;
     color: #fff;
 
-    span {
+    .close-btn {
         cursor: pointer;
         font-size: 1.5rem;
         border: 1px solid #444;
@@ -156,7 +149,7 @@ header {
         .profile-img {
             width: 200px;
             height: 200px;
-            border: 1px solid #000;
+            border: 1px solid #ccc;
         }
 
         p {
@@ -169,8 +162,39 @@ header {
     }
 }
 
+#projects {
+    .content {
+        gap: 10px;
+        justify-content: flex-start;
+        nav {
+            width: 25%;
+            ul {
+                list-style: none;
+                margin: 0;
+                li {
+                    cursor: pointer;
+                    padding: 0 5px;
+                    border-bottom: 1px solid #ccc;
+                    &:hover {
+                        background-color: #ccc;
+                    }
+                }
+            }
+        }
+        .project-details {
+            width: 75%;
+            background-color: #ccc;
+            padding: 10px;
+            .tech-stack {
+                color: #666;
+                font-style: italic;
+            }
+        }
+    }
+}
+
 footer {
-    border-top: 1px dotted #000;
+    background-color: #ccc;
     padding: 10px;
     text-align: center;
 
