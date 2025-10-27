@@ -13,7 +13,8 @@ export default function TimeDate() {
 
     return (
         <div className="time-date--container">
-            <p>{dateTime.toLocaleString()}</p>
+            <p>🕒{dateTime.toLocaleString().split(", ")[0]}</p>
+            <p>📅{dateTime.toLocaleString().split(", ")[1]}</p>
         </div>
     )
 }
