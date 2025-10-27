@@ -3,7 +3,7 @@ import projects from "../data/projects";
 import WindowTitleBar from "../components/WindowTitleBar";
 
 
-export default function ProjectsContainer() {
+export default function Projects() {
     const [currentProject, setCurrentProject] = useState(projects[0]);
 
     const style = {
@@ -28,11 +28,11 @@ export default function ProjectsContainer() {
                     </ul>
                 </nav>
 
-                <div class="project-details">
+                <div className="project-details">
                     <h3>{currentProject.name}</h3>
                     <p>{currentProject.description}</p>
-                    <p class="tech-stack">{currentProject.techStack.join(", ")}</p>
-                    <a class="cta-link" href={currentProject.url} target="_blank">{currentProject.url}</a>
+                    <p className="tech-stack">{currentProject.techStack.join(", ")}</p>
+                    <a className="cta-link" href={currentProject.url} target="_blank">{currentProject.url}</a>
                 </div>
             </div> 
         </section>
