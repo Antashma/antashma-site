@@ -3,10 +3,10 @@ import { AnimatePresence } from "framer-motion";
 
 import Header from "./components/Header";
 import IconNav from "./IconNav";
+import WindowShell from "./components/WindowShell";
+import About from "./pages/About";
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact";
-import About from "./pages/About";
-import WindowShell from "./components/WindowShell";
 
 import './App.css';
 
