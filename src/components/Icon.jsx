@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-import { openWindow } from "../scripts/openCloseHandlers";
-
 import aboutIcon from "../assets/icons/about-icon.png";
 import contactIcon from "../assets/icons/contact-icon.png";
 import projectsIcon from "../assets/icons/contact-icon.png";
@@ -29,7 +27,6 @@ export default function Icon({ windowId, iconText }) {
         <div 
             id={`${windowId}-icon`} 
             className="desktop-icon--container"
-            onClick={() => openWindow(windowId)}
             onMouseOver={() => setIsHovering(true)}
             onMouseOut={() => setIsHovering(false)}
             >

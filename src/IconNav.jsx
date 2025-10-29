@@ -1,11 +1,21 @@
+import { Link } from "react-router-dom";
+
 import Icon from "./components/Icon";
 
 export default function IconNav() {
-    return(
+    return (
         <nav id="icons">
-            <Icon windowId="about" iconText="About" />
-            <Icon windowId="projects" iconText="Projects" />
-            <Icon windowId="contact" iconText="Contact" />
+            <Link to="/about">
+                <Icon windowId="about" iconText="About" />
+            </Link>
+
+            <Link to="/projects">
+                <Icon windowId="projects" iconText="Projects" />
+            </Link>
+
+            <Link to="/contact">
+                <Icon windowId="contact" iconText="Contact" />
+            </Link>
         </nav>
     )
 }

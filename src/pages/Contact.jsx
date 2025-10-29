@@ -1,14 +1,6 @@
-import WindowTitleBar from "../components/WindowTitleBar";
-
-
 export default function Contact() {
-    const style = {
-        display: "none"
-    }
 
     return (
-        <section id="contact" className="window" style={style}>
-            <WindowTitleBar titleText="📄contact.txt" windowId="contact"/>
             <div className="content">
                 {/* <form id="contact-form" method="POST" action="sendEmail.php">
                     <label>Name: 
@@ -25,6 +17,5 @@ export default function Contact() {
                 </form> */}
             <p>Email me: antashma@gmail.com</p>
             </div>
-        </section>
     )
 }

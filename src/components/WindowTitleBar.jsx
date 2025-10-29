@@ -1,10 +1,8 @@
-import { closeWindow } from "../scripts/openCloseHandlers";
-
-export default function WindowTitleBar({ titleText, windowId }) {
+export default function WindowTitleBar({ titleText, close }) {
     return (
         <div className="title-bar">
                 <h2>{titleText}</h2>
-                <span className="close-btn" onClick={() => closeWindow(windowId)}>X</span>
+                <span className="close-btn" onClick={close}>✕</span>
         </div>
     )
 }
