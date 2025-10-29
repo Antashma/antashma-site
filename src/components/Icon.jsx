@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { openWindow } from "../scripts";
+import { openWindow } from "../scripts/openCloseHandlers";
 
 import aboutIcon from "../assets/icons/about-icon.png";
 import contactIcon from "../assets/icons/contact-icon.png";

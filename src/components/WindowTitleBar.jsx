@@ -1,4 +1,4 @@
-import { closeWindow } from "../scripts";
+import { closeWindow } from "../scripts/openCloseHandlers";
 
 export default function WindowTitleBar({ titleText, windowId }) {
     return (
