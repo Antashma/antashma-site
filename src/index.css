@@ -1,25 +1,4 @@
 @font-face {
-    font-family: 'Merriweather';
-    src: url(./assets/font/Merriweather-Regular.ttf), format("ttf");
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Merriweather';
-    src: url(./assets/font/Merriweather-Italic.ttf), format("ttf");
-    font-style: italic;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Merriweather';
-    src: url(./assets/font/Merriweather-Bold.ttf), format("ttf");
-    font-style: bold;
-    font-weight: bold;
-}
-
-@font-face {
     font-family: 'DM Mono';
     src: url(./assets/font/DMMono-Regular.ttf), format("ttf");
     font-style: normal;
@@ -41,7 +20,6 @@
 }
 
 :root {
-    --merryFont: Merriweather, 'Times New Roman', Times, serif;
     --monoFont: "DM Mono", monospace;
     --plainFont: 'Courier New', Courier, monospace;
 }

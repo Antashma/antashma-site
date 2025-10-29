@@ -175,24 +175,9 @@ header {
 #projects {
     .content {
         gap: 10px;
-        justify-content: flex-start;
-        nav {
-            width: 25%;
-            ul {
-                list-style: none;
-                margin: 0;
-                li {
-                    cursor: pointer;
-                    padding: 0 5px;
-                    border-bottom: 1px solid #ccc;
-                    &:hover {
-                        background-color: #ccc;
-                    }
-                }
-            }
-        }
+        flex-direction: column;
         .project-details {
-            width: 75%;
+            width: 100%;
             background-color: #ccc;
             padding: 10px;
             .tech-stack {
