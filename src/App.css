@@ -13,10 +13,6 @@ h3 {
     text-transform: uppercase;
 }
 
-main {
-    width: 100%;
-}
-
 ol,
 ul {
     margin-left: 50px;
@@ -26,13 +22,8 @@ a {
     color: rgb(251, 46, 149);
 }
 
-/* #app {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-} */
-
 header {
+    flex-shrink: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -60,6 +51,7 @@ header {
 }
 
 #icons {
+    flex-shrink: 0;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -104,15 +96,20 @@ header {
 }
 
 .window {
+    flex-grow: 1;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     width: 800px;
-    height: auto;
-    margin: 0 auto;
+    margin-bottom: 10px;
     border: 1px solid #000;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-size: 1.6rem;
 
     .title-bar {
+        flex-shrink: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -137,6 +134,8 @@ header {
     }
 
     .content {
+        flex: 1;
+        overflow-y: auto;
         display: flex;
         padding: 10px;
         background-color: rgba(255, 255, 255, 0.1);
@@ -190,7 +189,8 @@ header {
 
             .tech-stack {
                 color: #666;
-                font-style: italic;
+                text-transform: uppercase;
+                font-size: 1.2rem;
             }
         }
     }
