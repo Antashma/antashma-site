@@ -16,7 +16,7 @@ export default function Contact() {
         emailjs.sendForm('contact_service', 'contact_us', contactForm.current, {
         publicKey: "O5UN_FiqzW7zKoBEY",})
             .then(() => {
-                //console.log('SUCCESS!');
+                console.log('SUCCESS!');
                 navigate("/message-sent");
             })
             .catch((error) => {
@@ -28,15 +28,15 @@ export default function Contact() {
     return (
             <div className="content">
                 <form id="contact-form" ref={contactForm} onSubmit={handleSubmit}>
-                    <label>Name: 
+                    <label id="name-lbl">Name: 
                         <input required type="text" name="name" id="contact-name" />
                     </label>
 
-                    <label>Email:
+                    <label id="email-lbl">Email:
                         <input required type="email" name="email" id="contact-email"/>
                     </label>
                     
-                    <label>Message: 
+                    <label id="msg-lbl">Message: 
                        <textarea required name="message" id="contact-message"></textarea> 
                     </label>
                     <input type="submit" disabled={isDisabled} />
