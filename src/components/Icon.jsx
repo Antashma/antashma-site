@@ -1,8 +1,12 @@
 import { useState } from "react";
 
-import aboutIcon from "../assets/icons/about-icon.png";
-import contactIcon from "../assets/icons/contact-icon.png";
-import projectsIcon from "../assets/icons/contact-icon.png";
+// import aboutIcon from "../assets/icons/about-icon.png";
+// import contactIcon from "../assets/icons/contact-icon.png";
+// import projectsIcon from "../assets/icons/contact-icon.png";
+
+import aboutIcon from "../assets/icons/id-card.png";
+import contactIcon from "../assets/icons/letter.png";
+import projectsIcon from "../assets/icons/folder.png";
 
 
 export default function Icon({ windowId, iconText }) {

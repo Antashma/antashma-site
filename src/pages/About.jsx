@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import pfp from "../assets/pfp.jpg";
 
 export default function About() {
@@ -8,15 +9,19 @@ export default function About() {
             <div className="profile-text">
                 <p>Hi, I'm Samantha—welcome to my little corner of the web!</p>
 
-                <p>Here, you'll find a collection of projects, big and small, born from a love of tinkering with my favorite languages—especially JavaScript. Whether it's a quirky side experiment or a full-fledged app, there's always something brewing.</p>
+                <p>Here, you'll find a collection of <Link to="/projects">projects</Link>, big and small, born from a love of tinkering with my favorite languages—especially JavaScript. Whether it's a quirky side experiment or a full-fledged app, there's always something brewing.</p>
 
-                <p>See something that sparks your interest? I'd love to hear your thoughts—or even collaborate! Feel free to reach out via the contact page.</p>
+                <p>See something that sparks your interest? I'd love to hear your thoughts—or even collaborate! Feel free to reach out via the <Link to="/contact" >contact page</Link>.</p>
 
                 <p>Enjoy your stay!</p>
 
                 <p className="credits">Site created with ❤️ & ☕ by <a href="https://github.com/Antashma" title="Github link">@antashma</a>
                     <br />
-                    Heart emoticon icons created by <a href="https://www.flaticon.com/packs/heart-emoticons" title="heart emoticon icons">Smashicons - Flaticon</a></p>
+                    {/* Heart emoticon icons created by <a href="https://www.flaticon.com/packs/heart-emoticons" title="heart emoticon icons">Smashicons - Flaticon</a> */}
+
+                    Icons created by <a href="https://www.flaticon.com/free-icons/id-card" title="id card icons">Freepik - Flaticon</a>
+                </p>
+                
             </div>
 
         </div>

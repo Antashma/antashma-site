@@ -40,16 +40,16 @@ html {
 
 body {
     font-family: var(--monoFont);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     background: url(./assets/greyfloral.png) fixed;
 }
 
 #app {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     min-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
