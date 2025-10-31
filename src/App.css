@@ -120,11 +120,10 @@ main {
     max-height: 100%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 1px solid #000;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    /* font-size: 1.6rem; */
 
     .title-bar {
         flex-shrink: 0;
@@ -166,8 +165,6 @@ main {
 
 
 #about {
-    display: flex;
-    flex-wrap: wrap;
 
     .content {
         gap: 10px;
@@ -181,16 +178,18 @@ main {
         }
 
         .profile-text {
-            background-color: #ccc;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             padding: 10px;
-            justify-content: center;
-            align-items: center;
+            background-color: #ccc;
+            height: 100%;
 
             .credits {
                 border-top: 1px solid #666;
-                margin-top: 10px;
                 padding-top: 10px;
-                font-style: italic;
+                font-size: 1.2rem;
+                text-align: center;
             }
         }
     }
@@ -217,16 +216,16 @@ main {
 
 #contact {
     .content {
-        background-color: #ccc;
-        margin: 10px;
         justify-content: center;
 
         form {
+            background-color: #ccc;
+            padding: 10px;
             display: flex;
             flex-direction: column;
             gap: 10px;
-            height: 500px;
             width: 500px;
+            height:100%;
             justify-content: space-around;
     
             label {
@@ -253,8 +252,7 @@ main {
     
             textarea {
                 font-family: Arial, Helvetica, sans-serif;
-                flex: 1;
-                min-height: 0;
+                height: 350px;
             }
     
             input[type="submit"] {
