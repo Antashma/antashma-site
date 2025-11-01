@@ -1,7 +1,10 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
-//import "dotenv/config";
+import linkedinIcon from "../assets/icons/linkedin.png";
+import instagramIcon from "../assets/icons/instagram.png";
+import githubIcon from "../assets/icons/github.png";
+
 
 export default function Contact() {
     const [isDisabled, setIsDisabled] = useState(false);
@@ -27,6 +30,16 @@ export default function Contact() {
 
     return (
             <div className="content">
+                <section id="socials--container">
+                    <h3>Connect with me</h3>
+                    <div id="socials">
+                        <a href="https://github.com/Antashma" target='_blank' title='github'><img className='social'src={githubIcon} width={60} height={60}/></a>
+                        <a href="https://www.linkedin.com/in/samantha-lee-goodman/" target='_blank' title="linkedin"><img className='social'src={linkedinIcon} width={60} height={60}/></a>
+                        <a href="https://www.instagram.com/dev.antashma/" target='_blank' title="instagram"><img className='social'src={instagramIcon} width={60} height={60}/></a>
+                    </div>
+                </section>
+                <section id="contact-form--container">
+                    <h3>Send me a message</h3>
                 <form id="contact-form" ref={contactForm} onSubmit={handleSubmit}>
                     <label id="name-lbl">Name: 
                         <input required type="text" name="name" id="contact-name" />
@@ -40,8 +53,8 @@ export default function Contact() {
                        <textarea required name="message" id="contact-message"></textarea> 
                     </label>
                     <input type="submit" disabled={isDisabled} />
-                </form>
-            {/* <p>Email me: antashma@gmail.com</p> */}
+                    </form>
+                 </section>
             </div>
     )
 }

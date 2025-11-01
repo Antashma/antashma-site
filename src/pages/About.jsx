@@ -18,7 +18,7 @@ export default function About() {
                 <p className="credits">
                     Site created with ❤️ & ☕ by <a href="https://github.com/Antashma" title="Github link">@antashma</a>
                     <br />
-                    Icons created by <a href="https://www.flaticon.com/free-icons/id-card" title="id card icons">Freepik - Flaticon</a>
+                    Icons created by <a href="https://www.flaticon.com/authors/freepik" title="icons by freepik">Freepik - Flaticon</a>
                 </p>
                 
             </div>
